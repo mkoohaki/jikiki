@@ -1,0 +1,682 @@
+﻿
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    text-align: left;
+    font-family: verdana, Arial, sans-serif;
+    font-size: 20px;
+    color: black;
+    background-color: #FFC0CB;
+    position: relative;
+    top: 30px;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    position: relative;
+    margin-top: 100px;
+}
+
+footer {
+    position: relative;
+    padding-top: 170px;
+    clear: both;
+    text-align: center;
+    font-size: .8em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0;
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    position: relative;
+    color: #483D8B;
+    padding: 1px;
+    text-transform: uppercase;
+    clear: left;
+    text-decoration: none;
+}
+
+#h1 {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 3px solid #7B68EE;
+    background-color: #C71585;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+    padding: 20px;
+}
+
+h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+#h1signup, #h1password {
+    font-size: 1.2em;
+    margin-left: 40%;
+    margin-top: 20px;
+}
+
+#h1password {
+    margin-left: 27%;
+}
+
+#h1retrieving, #h1show, #h1account1, #h1account2, #h1retrievingMesssage, #h1retrievingError, #h1retrievingSuccess, #h1sigupSuccess {
+    font-size: 1.2em;
+    margin-left: 35%;
+    margin-top: 20px;
+    color: red;
+    text-align: center;
+}
+
+#h1login {
+    text-align: left;
+}
+
+#h1show {
+    margin-left: 20%;
+}
+
+#h1account1, #h1account2, #h1retrievingMesssage, #h1retrievingError, #h1retrievingSuccess {
+    margin-left: 32%;
+    color: white;
+    width: 36%;
+    background-color: red;
+    padding: 10px;
+}
+
+#h1retrievingMesssage, #h1account1 {
+    width: 50%;
+    margin-left: 25%;
+}
+
+#h1account2, #h1retrievingSuccess {
+    color: black;
+    background-color: #A5CC57;
+}
+
+#h1sigupSuccess {
+    margin-left: 25%;
+    color: black;
+    width: 50%;
+    background-color: #A5CC57;
+    padding: 10px;
+}
+
+#h2retrieving {
+    font-size: 1.2em;
+    margin-left: 17.2%;
+}
+
+#h2account {
+    font-size: 1.2em;
+    margin-left: 27%;
+}
+
+#h4account {
+    font-size: 1.2em;
+    margin-left: 27.5%;
+}
+
+#h2retrievingp {
+    font-size: 1.2em;
+    margin-left: 24%;
+}
+
+#h2retrievingd {
+    font-size: 1.2em;
+    margin-left: 27.5%;
+}
+
+#h2retrievinga {
+    font-size: 1.2em;
+    margin-left: 29%;
+}
+
+#pretrieving {
+    margin-left: 13%;
+    color: #483D8B;
+}
+
+#pretrievingd {
+    margin-left: 27%;
+    color: #483D8B;
+}
+
+#pretrievingp {
+    margin-left: 30%;
+    color: #483D8B;
+}
+
+#pretrievingg {
+    margin-left: 31%;
+    color: #483D8B;
+}
+
+#pretrievinga {
+    margin-left: 27.5%;
+    color: #483D8B;
+}
+
+#home_links {
+    width: 70%;
+    margin-left: 30%;
+}
+
+.home_signup_button, #home_login_button, #google_login_button, #account_button {
+    font-size: 1em;
+    text-align: center;
+    position: relative;
+    text-align: center;
+    background-color: #483D8B;
+    text-transform: none;
+    color: white;
+}
+
+.home_buttons_link {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#home_login_button {
+    width: 200%;
+    margin-top: 1.5px;
+}
+
+#account_button {
+    width: 100%;
+}
+
+#google_login_button {
+    position: relative;
+    top: 1.5px;
+    padding-right: 85px;
+    padding-left: 20px;
+    height: 38px;
+    top: 62px;
+    text-decoration: none;
+    padding-bottom: 2.5px;
+    right: 14.75%;
+    background-image: url(/images/google.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 130px;
+    background-size: contain;
+}
+
+.home_signup_button {
+    font-size: 1em;
+    width: 15%;
+    margin-left: 80%;
+    top: -33px;
+    font-weight: 300;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+}
+
+.home_login_button_div {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.home_signup_button a {
+    text-transform: none;
+    color: white;
+}
+
+.login {
+    float: left;
+    position: relative;
+    margin-left: 5%;
+    text-decoration: none;
+}
+
+.signup_button, #signup_button_home {
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+#retrieving_button {
+    text-decoration: none;
+}
+
+.hcontact {
+    margin-top: 35px;
+}
+
+
+
+#item_form {
+    position: relative;
+    text-align: left;
+    color: black;
+    margin-top: 150px;
+    font-weight: bold;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+
+#services_update_content {
+    margin-top: 80px;
+}
+
+.border {
+    border: 3px solid #7B68EE;
+    position: relative;
+    width: 300px;
+    height: auto;
+    margin-left: 30%;
+}
+
+#html {
+    position: relative;
+    margin-top: 100px;
+}
+
+#web-page-pic {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cellphone {
+    position: relative;
+    margin-top: 20px;
+}
+
+.banner {
+    background-color: white;
+    padding: 10px 16px;
+    z-index: 1000;
+}
+
+/* Page content */
+#container {
+    padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#title {
+    position: relative;
+    margin-left: 43.5%;
+}
+
+#logo {
+    width: 200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#line1 {
+    position: relative;
+    border-bottom: 20px solid #483D8B;
+    top: 0px;
+    width:90%;
+    margin-left: 5%;
+}
+
+#line2, #line3 {
+    position: relative;
+    border-bottom: 3px solid #483D8B;
+    margin-top:10px;
+    width: 90%;
+    margin-left: 10%;
+}
+
+#line3 {
+    width: 85%;
+}
+
+.item_form {
+    left: 14%;
+    float: left;
+    position: relative;
+    width: 20%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+}
+
+#item_submit, #signup_submit, #goToMainPage {
+    width: 30%;
+    margin-left: 23%;
+    margin-top: 50px;
+}
+
+#item_submit, #item_input_form, #goToMainPage {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item_input, .signup_input {
+    width: 100%;
+    height: 30px;
+    border: 3px solid #483D8B;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto',sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #DB7093;
+}
+
+.signup_input {
+    background-color: #FFD700 !important;
+}
+
+.login_input {
+    height: 24px;
+    border: 2px solid #483D8B;
+    text-align: left;
+    color: #483D8B;
+    background-color: white;
+    width: 100%;
+    font-size: 18px;
+    color: #483D8B;
+}
+
+#item_submit_button, #signup_submit_button, #retrieving_submit_button, #retrieving_delete, #account_delete_button, #account_password_button {
+    width: 100%;
+    height: 36px;
+    text-align: center;
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    background-color: #FF1493;
+    transition: all 0.2s;
+    border: 3px solid #C71585;
+    font-size: 18px;
+}
+
+#signup_submit_button {
+    width: 40%;
+}
+
+#item_delete_button_div {
+    width: 24%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#retrieving_submit_button, #signup_submit_button, #account_delete_button, #account_password_button {
+    width: 120%;
+    margin-left: 45%;
+}
+
+#account_delete_button {
+    margin-left: 48%;
+}
+
+#account_password_button {
+    margin-left: 52%;
+}
+#signup_submit_button {
+    margin-left: 30%;
+}
+
+#retrieving_delete {
+    width: 35%;
+    margin-left: 35.5%;
+}
+
+#item_submit_button:hover, #signup_submit_button:hover {
+    background-color: #C71585;
+    font-weight: bold;
+}
+
+.signup_form, .retrieve_form {
+    position: relative;
+    margin-left: 12%;
+    width: 20%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+}
+
+.retrieve_form {
+    width: 65%;
+    margin-left: 0;
+}
+
+.retrieving_form {
+    position: relative;
+    float: left;
+    width: 30%;
+    padding: 1%;
+}
+
+#retrieving_form {
+    margin-left: 3%;
+}
+
+#retrieving_form_div {
+    width: 40%;
+    margin-left: 30%;
+}
+
+#deleting_form_div {
+    width: 35%;
+    margin-left: 28%;
+}
+
+#signup_form {
+    margin-top: 50px;
+}
+
+#service_table {
+    position: relative;
+    top: 60px;
+    margin-left: 3%;
+    padding-bottom: 100px;
+}
+
+th, tr {
+    width: 15%;
+    text-align: center;
+    position: relative;
+    background-color: #4eb5f1;
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+th {
+    background-color: #4095c6;
+    height: 40px;
+}
+
+tr {
+    font-weight: 300;
+}
+
+#error_message {
+    margin-left: 5%;
+}
+
+#error_h {
+    margin-left: 20%;
+}
+
+a {
+    color: #00B7FF;
+}
+
+
+table {
+    width: 60%;
+    border-collapse: collapse;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 20px black;
+}
+
+
+th, td {
+    padding: 15px;
+    background-color: #BA55D3;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border: 3px solid #941b8f;
+}
+
+th {
+    background-color: #941b8f;
+}
+
+tbody tr:hover td {
+    background-color: #DA70D6;
+}
+
+tbody td {
+    position: relative;
+}
+
+#image_show_div, #user_photo {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+#user_photo {
+    margin-bottom: 50px;
+    width: 10%;
+}
+
+#image_show {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 0 15px hsl(288, 59%, 40%), 
+                0 0 0 25px hsl(288, 59%, 60%),  
+                0 0 0 45px hsl(302, 59%, 75%);
+}
+
+#logout_button {
+    height: 90PX;
+    position: relative;
+}
+
+.header_div_1 {
+    float: left;
+    left: 35%;
+    margin-left: 12%;
+}
+
+#logout_button2 {
+    width: 130%;
+    display: inline-block;
+    height: 40px;
+    margin-top: 15px;
+    height: 30px;
+    margin-left: -7.2%;
+}
+
+#h1login {
+    font-size: 1.2em;
+    text-align: center;
+    position: relative;
+    color: #8000FF;
+    text-transform: none;
+    display: inline-block;
+    left: 5%;
+    bottom: 7px;
+}
+
+#user_photo_image {
+    width: auto;
+    height: 30px;
+    display: inline-block;
+    margin-left: 9%;
+}
+
+#logout_button1, #logout_button3, #logout_button4 {
+    font-size: 1em;
+    text-align: center;
+    position: relative;
+    background-color: #483D8B;
+    text-transform: none;
+    color: white;
+    font-weight: 300;
+    padding-bottom: 3px;
+    text-decoration: none;
+    width: 10%;
+    height: 27px;
+    padding-top: 3px;
+    margin-top: 15px;
+}
+
+#logout_button3, #logout_button4 {
+    margin-top: 15px;
+}
+
+#logout_button1 a, #logout_button3 a, #logout_button4 a {
+    text-transform: none;
+    color: white;
+}
+
+#logout_button5 {
+    width: 130%;
+    display: inline-block;
+    height: 40px;
+    margin-top: 15px;
+    height: 30px;
+    margin-left: 50%;
+}
+
+.header_div_2 {
+    float: left;
+    left: 20%;
+}
+
+#logout_button4 {
+    margin-left: 25%;
+}
+
+#logout_button3 {
+    margin-left: 4%;
+}
+
+#deletePic {
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+}
+
+#account_lable {
+    font-weight: bold;
+}
+
+#delete_google_account {
+    position: relative;
+    float: left;
+    width: 30%;
+    padding: 1%;
+    margin-left: 32%;
+}

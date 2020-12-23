@@ -1,0 +1,79 @@
+//-link to the header.pug file in the partials folder in views
+extends partials/header-1
+
+//-link to the block position in header.pug file in the partials folder in views
+block content
+    if (message)
+        h1#h1account1= message
+    if (success_message)
+        h1#h1account2= success_message
+    br
+    div#retrieving_form
+        if (!user.imageAddress)
+            if (user.imageName)
+                div#user_photo
+                    img#image_show(src=`../imageStorage/${user.username}-${user._id}/${user.imageName}`)
+            div.retrieving_form
+                h2#h2account Update Account
+                div#line2
+                div#signup_form
+                    form(method='POST' enctype='multipart/form-data' action='/update_account')
+                        input(type='hidden' name='userId' value=user.id)
+                        div.retrieve_form
+                            input.signup_input(type='text' placeholder=user.username value=user.username name='username', required)
+                        div.retrieve_form
+                            input.signup_input(type='email' placeholder=user.email value=user.email name='email', required)
+                        div.retrieve_form
+                            label(for='image')
+                            input(type='file' name='image' value=user.image.data class='item_input' accept='image/png/jpg')
+                        if (user.imageName)
+                            div.retrieve_form
+                                input(type="checkbox" id="deletePic" name="deletePic")
+                                label(for="deletePic" id='account_lable') Delete photo
+                        div#signup_submit
+                            button#retrieving_submit_button(type='submit' value='update_account') Update
+        
+            div.retrieving_form
+                h3#h2retrievingp Change password         
+                div#line2
+                div#signup_form
+                    //Insert form
+                    form(method='POST' action='/change_password_account' autocomplete='off')
+                        input(type='hidden' name='username' value=user.username)
+                        input(type='hidden' name='email' value=user.email)
+                        input(type='hidden' name='userId' value=user.id)
+                        div.retrieve_form
+                            input.signup_input(type='password' placeholder='New password' name='password', required)
+                        div.retrieve_form
+                            input.signup_input(type='password' placeholder='Re-Password' name='repassword', required)
+                        div#signup_submit
+                            button#account_password_button(type='submit' value='change') Change
+
+            div.retrieving_form
+                h4#h4account Delete account
+                div#line2
+                p#pretrievinga It will delete your items
+                div#signup_form
+                    //Insert form
+                    form(method='POST' action='/delete_account' autocomplete='off')
+                        input(type='hidden' name='email' value=user.email)
+                        input(type='hidden' name='username' value=user.username)
+                        div#signup_submit
+                            button#account_delete_button(type='submit' value='delete') Delete
+        else
+            div#user_photo
+                img#image_show(src=`${user.imageAddress}`)
+            div#delete_google_account
+                h4#h4account Delete account
+                div#line2
+                p#pretrievinga It will delete your items
+                div#signup_form
+                    //Insert form
+                    form(method='POST' action='/delete_account' autocomplete='off')
+                        input(type='hidden' name='email' value=user.email)
+                        input(type='hidden' name='username' value=user.username)
+                        div#signup_submit
+                            button#account_delete_button(type='submit' value='delete') Delete
+
+    //-link to the footer.pug file in the partials folder in views
+    include partials/footer

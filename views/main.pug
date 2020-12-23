@@ -1,0 +1,32 @@
+//-link to the header.pug file in the partials folder in views
+extends partials/header
+
+//-link to the block position in header.pug file in the partials folder in views
+block content
+    h1#h1retrieving= message 
+    br
+    table
+        tr
+            th SELLER
+            th NAME
+            th DESCRIPTION
+            th PRICE
+            th IMAGE
+
+        each item in items
+            tr 
+                td= item.seller
+                td= item.name
+                td= item.description
+                td= "$" + parseFloat(item.price).toFixed(2)
+                td
+                    if (item.imageName)
+                        img(src=`imageStorage/${item.seller}-${item.userId}/${item.imageName}` width='100px')
+                    else
+                        p -
+
+    div#item_submit
+        a(href='/personal' id="item_submit_button") Go to personal page
+
+    //link to the footer.pug file in the partials folder in views
+    include partials/footer

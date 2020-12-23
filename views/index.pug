@@ -1,0 +1,12 @@
+//-link to the header.pug file in the partials folder in views
+extends partials/header
+
+//-link to the block position in header.pug file in the partials folder in views
+block content
+    div#container
+        h1#h1 
+            a(href="/home" id="start") For Buy and Sale Enter
+
+    //-link to the footer.pug file in the partials folder in views
+    include partials/footer
+        

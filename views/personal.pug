@@ -1,0 +1,60 @@
+//-link to the header.pug file in the partials folder in views
+extends partials/header
+
+//-link to the block position in header.pug file in the partials folder in views
+block content
+    
+    h1#h1retrieving= message
+    br
+    table
+        tr
+            th SELLER
+            th NAME
+            th DESCRIPTION
+            th PRICE
+            th IMAGE
+            th 
+            th 
+   
+        each item in items
+            tr 
+                td= item.seller
+                td= item.name
+                td= item.description
+                td= "$" + parseFloat(item.price).toFixed(2)               
+                td
+                    if (item.imageName)
+                        img(src=`/imageStorage/${item.seller}-${item.userId}/${item.imageName}` width='100px')
+                    else
+                        p -
+                td
+                    a(href='show/' + item.id id='signup_button') Edit
+                td
+                    form(method='POST' action='/delete/' + item.id)
+                        button(type='submit' value='Delete' id="item_submit_button") Delete
+        
+    div#item_form
+        form(method='POST' enctype='multipart/form-data' action='/submit')
+            div#item_input_form
+                input(type='hidden' name='seller' value=user.username)
+                input(type='hidden' name='userId' value=user.id)
+                div.item_form 
+                    input(type='text' name='name' placeholder='Item name' class='item_input' id="username")
+                div.item_form 
+                    input(type='text' name='description' placeholder='Description' class='item_input' id="description")
+                div.item_form   
+                    input(type='text' name='price' placeholder='Price' class='item_input' id="price")
+                div.item_form  
+                    label(for='image')
+                    input(type='file' name='image' class='item_input' accept='image/png/jpg')
+                div#item_submit
+                    button(type='submit' value='Submit' id="item_submit_button") Submit
+
+    div#goToMainPage
+        a(href='/main' id="item_submit_button") Go to main page
+
+
+
+
+    //-link to the footer.pug file in the partials folder in views
+    include partials/footer

@@ -1,0 +1,28 @@
+//-link to the header.pug file in the partials folder in views
+extends partials/header
+
+//-link to the block position in header.pug file in the partials folder in views
+block content
+    if (message)
+        h1#h1retrievingMesssage= message
+    if (success_message)
+        h1#h1sigupSuccess= success_message
+    div#retrieving_form_div
+        h2#h1signup Sign up
+        div#line3
+        div#signup_form
+            //Insert form
+            form(method='POST' action='/signup' autocomplete='off')
+                div.retrieve_form
+                    input.signup_input(type='text' placeholder='Username' name='username', required)
+                div.retrieve_form
+                    input.signup_input(type='password' placeholder='Password' name='password', required)
+                div.retrieve_form
+                    input.signup_input(type='password' placeholder='Re-Password' name='repassword', required)
+                div.retrieve_form
+                    input.signup_input(type='email' placeholder='Email' name='email', required)
+                div#signup_submit
+                    button#signup_submit_button(type='submit' value='signup') Sign Up
+
+    //-link to the footer.pug file in the partials folder in views
+    include partials/footer

@@ -1,0 +1,56 @@
+// Header page
+doctype html
+html
+	head
+		title= title
+		//Internal css file from public/css/main.css folder created by myself
+		link(rel="stylesheet" type="text/css" href="/stylesheets/main.css" )
+		//Insert js file from public/js/main.js created by myself
+		script(src="/javascripts/main.js" async)
+	
+	body
+		//Create header and list of links for access to all pages
+		header
+			div#topContainer
+				if (!user)
+					div#home_links
+						div#google_login_div
+							form.home_login_button_div(method='POST' action='/login')
+								div.login
+									input.login_input(type='text' name='username' placeholder='Username' id="username")
+								div.login
+									input.login_input(type='password' name='password' placeholder='Password' id="password")
+								div.login
+									button(type='submit' value='login' id="home_login_button") Login	
+							div.home_login_button_div
+								a(href="/google" id="google_login_button") Login with                 
+						div#home_buttons_link
+							div.home_signup_button
+								a(href="/retrieving" id="retrieving_button") Retrieving
+							br
+							div.home_signup_button
+								a(href="/signup" id="signup_button_home") Sign up
+				else
+					div#logout_button
+						div.header_div_1
+							a#logout_button2(href="/account" class="signup_button")
+								h1#h1login= 'Welcome ' + user.username
+								if (user.imageName)
+									img#user_photo_image(src=`../imageStorage/${user.username}-${user._id}/${user.imageName}`)
+								if (user.imageAddress)
+									img#user_photo_image(src=`${user.imageAddress}`)
+						div.header_div_1#logout_button1
+							a(href="/logout" class="signup_button") Logout
+
+
+
+				div#myBanner.banner
+					div#title
+						img(src="/images/jikiki.jpg"  id="logo" alt="Jikiki")
+					div#line1
+
+		//Main comes here from each pages
+		block content
+
+
+

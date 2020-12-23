@@ -1,0 +1,52 @@
+//-link to the header.pug file in the partials folder in views
+extends partials/header
+
+//-link to the block position in header.pug file in the partials folder in views
+block content
+    h1#h1show= message
+    div#image_show_div
+        if (item.imageName)
+            img#image_show(src=`../imageStorage/${item.seller}-${item.userId}/${item.imageName}`)
+    br
+    table
+        tr
+            th SELLER
+            th NAME
+            th DESCRIPTION
+            th PRICE
+
+            tr 
+                td= item.seller
+                td= item.name
+                td= item.description
+                td= "$" + parseFloat(item.price).toFixed(2)
+
+    div#item_form
+        form(method='POST' enctype='multipart/form-data' action='/update')
+            div#item_input_form
+                input(type='hidden' name='seller' value=item.seller)
+                input(type='hidden' name='userId' value=user.id)
+                div.item_form 
+                    input(type='text' name='name' value=item.name class='item_input' id="username")
+                div.item_form 
+                    input(type='text' name='description' value=item.description class='item_input' id="description")
+                div.item_form   
+                    input(type='text' name='price' value=item.price class='item_input' id="price")
+                div.item_form  
+                    label(for='image')
+                    input(type='file' name='image' value=item.image.data class='item_input' accept='image/png/jpg')
+                div.item_form  
+                    input(type='hidden' name='id' value=item.id)
+
+                if (item.imageName)
+                    div.item_form
+                        input(type="checkbox" id="deletePic" name="deletePic")
+                        label(for="deletePic") Delete image
+            div#item_submit
+                button(type='submit' id="item_submit_button") Update
+    div#item_delete_button_div
+        form(method='POST' action='/delete/' + item.id)
+            button(type='submit' value='Delete' id="item_submit_button") Delete
+
+    //-link to the footer.pug file in the partials folder in views
+    include partials/footer

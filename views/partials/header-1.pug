@@ -1,0 +1,38 @@
+// Header page
+doctype html
+html
+	head
+		title= title
+		//Internal css file from public/css/main.css folder created by myself
+		link(rel="stylesheet" type="text/css" href="/stylesheets/main.css" )
+		//Insert js file from public/js/main.js created by myself
+		script(src="/javascripts/main.js" async)
+	
+	body
+		//Create header and list of links for access to all pages
+		header
+			div#topContainer
+				div#logout_button
+					div.header_div_2
+						div#logout_button5
+							h1#h1login= 'Welcome ' + user.username
+							if (user.imageName)
+								img#user_photo_image(src=`../imageStorage/${user.username}-${user._id}/${user.imageName}`)
+							if (user.imageAddress)
+								img#user_photo_image(src=`${user.imageAddress}`)
+					div.header_div_2#logout_button4
+						a(href="/main" class="signup_button") Home
+					div.header_div_2#logout_button3
+						a(href="/logout" class="signup_button") Logout
+
+
+				div#myBanner.banner
+					div#title
+						img(src="/images/jikiki.jpg"  id="logo" alt="Jikiki")
+					div#line1
+
+		//Main comes here from each pages
+		block content
+
+
+

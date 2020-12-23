@@ -1,0 +1,27 @@
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Assignment-2-part-1\comp2068-assignment-2-part-1\Jikiki\obj\Debug\Jikiki.njsprojAssemblyReference.cache
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Assignment-2-part-1\comp2068-assignment-2-part-1\Jikiki\obj\Debug\Jikiki.njsproj.CoreCompileInputs.cache
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Assignment-2-part-1\comp2068-assignment-2-part-1\Jikiki\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Assignment-2-part-1\comp2068-assignment-2-part-1\comp2068-assignment-2-part-1\Jikiki\obj\Debug\Jikiki.njsprojAssemblyReference.cache
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Assignment-2-part-1\comp2068-assignment-2-part-1\comp2068-assignment-2-part-1\Jikiki\obj\Debug\Jikiki.njsproj.CoreCompileInputs.cache
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Assignment-2-part-1\comp2068-assignment-2-part-1\comp2068-assignment-2-part-1\Jikiki\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Assignment-2-part-2\comp2068-assignment-2-part-2\Jikiki\obj\Debug\Jikiki.njsprojAssemblyReference.cache
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Assignment-2-part-2\comp2068-assignment-2-part-2\Jikiki\obj\Debug\Jikiki.njsproj.CoreCompileInputs.cache
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Assignment-2-part-2\comp2068-assignment-2-part-2\Jikiki\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Jikiki\jikiki\obj\Debug\Jikiki.njsprojAssemblyReference.cache
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Jikiki\jikiki\obj\Debug\Jikiki.njsproj.CoreCompileInputs.cache
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Jikiki\jikiki\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Jikiki - Copy\jikiki\obj\Debug\Jikiki.njsprojAssemblyReference.cache
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Jikiki - Copy\jikiki\obj\Debug\Jikiki.njsproj.CoreCompileInputs.cache
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Jikiki - Copy\jikiki\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Jikiki-2\jikiki\obj\Debug\Jikiki.njsprojAssemblyReference.cache
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Jikiki-2\jikiki\obj\Debug\Jikiki.njsproj.CoreCompileInputs.cache
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Jikiki-2\jikiki\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Jikiki-3\jikiki\obj\Debug\Jikiki.njsprojAssemblyReference.cache
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Jikiki-3\jikiki\obj\Debug\Jikiki.njsproj.CoreCompileInputs.cache
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Jikiki-3\jikiki\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Jikiki-4\jikiki\obj\Debug\Jikiki.njsprojAssemblyReference.cache
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Jikiki-4\jikiki\obj\Debug\Jikiki.njsproj.CoreCompileInputs.cache
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Jikiki-4\jikiki\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Jikiki-5\jikiki\obj\Debug\Jikiki.njsprojAssemblyReference.cache
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Jikiki-5\jikiki\obj\Debug\Jikiki.njsproj.CoreCompileInputs.cache
+C:\Hard Drive\College\Semester 4\JavaScript Frameworks\Jikiki-5\jikiki\bin\Microsoft.NodejsTools.WebRole.dll
