@@ -102,7 +102,7 @@ router.post('/signup', function (req, res) {
                                                         port: 587,
                                                         secure: false,
                                                         auth: {
-                                                            user: 'mkoohaki.online@mkoohaki.online', // generated ethereal user
+                                                            user: 'mkoohaki.online@meisamkoohaki.online', // generated ethereal user
                                                             pass: 'hostMK64656465'  // generated ethereal password
                                                         },
                                                         tls: {
@@ -112,7 +112,7 @@ router.post('/signup', function (req, res) {
 
                                                     // setup email data with unicode symbols
                                                     let mailOptions = {
-                                                        from: '"JIKIKI web application" <mkoohaki.online@mkoohaki.online>', // sender address
+                                                        from: '"JIKIKI web application" <mkoohaki.online@meisamkoohaki.online>', // sender address
                                                         to: registerUser.email, // email of receiver
                                                         subject: 'Activation account on JIKIKI', // Subject line
                                                         html: output // html body
