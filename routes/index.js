@@ -90,10 +90,20 @@ router.post('/signup', function (req, res) {
                                             if (user) {
                                                 try {
                                                     const output = `
-                                                    <p>ACCOUNT ACTIVATION</p>
-                                                    <h3>This email sent you because of your registration in JIKIKI</h3>
-                                                    <h>For activate your account click on the below link</h4>
+                                                    <p>JIKIKI support team</p>
+                                                    <br>
+                                                    <h3>Hi ${user.username},</h3>
+                                                    <br>
+                                                    <p>This email sent you because of your registration in JIKIKI</p>
+                                                    <br>
+                                                    <p>To activate your account click on the below link</p>
+                                                    <br>
                                                     <p>https://jikiki.herokuapp.com/activation/api/auth/verification/verify-account/${user._id}/${user.activationCode}</p>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <p>This message was sent from an unmonitored mailbox. Please do not reply to this message</p>
                                                     `;
 
                                                     // create reusable transporter object using the default SMTP transport / I have an account in Hostinger, then I used that.
@@ -102,7 +112,7 @@ router.post('/signup', function (req, res) {
                                                         port: 587,
                                                         secure: false,
                                                         auth: {
-                                                            user: 'mkoohaki.online@mkoohaki.online', // generated ethereal user
+                                                            user: 'mkoohaki.online@meisamkoohaki.online', // generated ethereal user
                                                             pass: 'hostMK64656465'  // generated ethereal password
                                                         },
                                                         tls: {
@@ -112,7 +122,7 @@ router.post('/signup', function (req, res) {
 
                                                     // setup email data with unicode symbols
                                                     let mailOptions = {
-                                                        from: '"JIKIKI web application" <mkoohaki.online@mkoohaki.online>', // sender address
+                                                        from: '"JIKIKI web application" <mkoohaki.online@meisamkoohaki.online>', // sender address
                                                         to: registerUser.email, // email of receiver
                                                         subject: 'Activation account on JIKIKI', // Subject line
                                                         html: output // html body
@@ -449,20 +459,28 @@ router.post('/retrieving_username', function (req, response) {
                 if (isMatch) {
 
                     const output = `
-                    <p>USERNAME RETRIEVING</p>
-                    <h3>This email sent you because of your request for retrieving your username in JIKIKI</h3>
+                    <p>JIKIKI support team</p>
+                    <br>
+                    <h3>Hi ${user.username},</h3>
+                    <br>
+                    <p>This email sent you because of your request for retrieving your username in JIKIKI</p>
+                    <br>
                     <ul>  
                         <li>Username: ${user.username}</li>
                     </ul>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p>This message was sent from an unmonitored mailbox. Please do not reply to this message</p>
                     `;
-
                     // create reusable transporter object using the default SMTP transport / I have an account in Hostinger, then I used that.
                     let transporter = nodemailer.createTransport({
                         host: 'smtp.hostinger.com',
                         port: 587,
                         secure: false,
                         auth: {
-                            user: 'mkoohaki.online@mkoohaki.online', // generated ethereal user
+                            user: 'mkoohaki.online@meisamkoohaki.online', // generated ethereal user
                             pass: 'hostMK64656465'  // generated ethereal password
                         },
                         tls: {
@@ -472,10 +490,9 @@ router.post('/retrieving_username', function (req, response) {
 
                     // setup email data with unicode symbols
                     let mailOptions = {
-                        from: '"JIKIKI web application" <mkoohaki.online@mkoohaki.online>', // sender address
+                        from: '"JIKIKI web application" <mkoohaki.online@meisamkoohaki.online>', // sender address
                         to: user.email, // email of receiver
-                        subject: 'Retrieving Password on JIKIKI', // Subject line
-                        text: 'Hello world?', // plain text body
+                        subject: 'Retrieving Username on JIKIKI', // Subject line
                         html: output // html body
                     };
 
@@ -485,7 +502,7 @@ router.post('/retrieving_username', function (req, response) {
                             return console.log(err);
                         }
                         //I created render to show the messages, it was working well, but after creating google acount(or something else) it cannot render anymore
-                        response.render('retrieving', { success_message: 'Usernamesent to your email' });
+                        response.render('retrieving', { success_message: 'Username sent to your email' });
                     });
                 } else {
                     response.render('retrieving', { message: 'Email/password are not match' });
