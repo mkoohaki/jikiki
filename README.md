@@ -6,7 +6,7 @@
 # Author: Meisam Koohaki
 # Summer, 2020
 #
-# Jikiki is a web application which is created in Visual Studio by using full-stack JavaScript solution
+# Jikiki is a web application which is created in Visual Studio with using full-stack JavaScript solution
 # This applicatoin comprises three major building blocks of 4 possible layers:
 #   - MongoDB as the database
 #   - Express as the web server framework
